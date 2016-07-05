@@ -1,7 +1,7 @@
 '''Program created by Akul Umamageswaran.'''
 
 '''NOTE:
-This program solves for the missing value in a proportion.
+This program finds the missing value in a proportion.
 It solves for either x1, x2, y1, or y2, given the other 3.
 The following layout is used.
 
