@@ -1,7 +1,7 @@
 '''Program created by Akul Umamageswaran.'''
 
 '''
-This program is of the old arcade game "Pong".
+This program is of the classic arcade game "Pong".
 The player on the left side moves his/her paddle up by pressing the W key and down by pressing the S key.
 The player on the right side moves his/her paddle up by pressing the UP arrow key and down by pressing the DOWN arrow key.
 The program will keep track of the score. The ball will reset at the center line after each goal is made.
