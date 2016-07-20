@@ -6,6 +6,7 @@
 using namespace std;
 
 int main() {
+    //this program was a collab with Thomas Weatherbee and Arnav Jain
     beginning:
     //first four operation choices
     int ans;
