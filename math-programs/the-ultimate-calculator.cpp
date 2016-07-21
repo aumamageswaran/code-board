@@ -8,10 +8,7 @@ using namespace std;
 int main() {
     beginning:
     //first four operation choices
-    int ans;
     string first_operation_choice;
-    system("cls");
-    system("clear");
     cout << "Welcome to the ultimate calculator! Please type the operation you would like to compute." << "\n";
     cout << "Enter ADD for addition, SUB for subtraction, MULT for multiplication, and DIV for division. For many other operations, enter OTHER." << "\n";
     cin >> first_operation_choice;
@@ -30,7 +27,6 @@ int main() {
             cout << "Enter the number you wish to find the absolute value of." << "\n";
             cin >> num;
             int absolute_value = abs(num);
-            ans = absolute_value;
             cout << "The absolute value of " << num << " is " << absolute_value << "." << "\n";
             goto end;
         }
@@ -44,7 +40,6 @@ int main() {
             for (int f = 1; f <= n; f++) {
                 factorial *= f;
             }
-            ans = factorial;
             cout << n << "!" << " is equal to " << factorial << "." << "\n";
             goto end;
         }
@@ -59,7 +54,6 @@ int main() {
             cout << "Enter exponent." << "\n";
             cin >> exponent;
             int power = pow(base, exponent);
-            ans = power;
             cout << base << " raised to the power of " << exponent << " equals " << power << "." << "\n";
             goto end;
         }
@@ -71,7 +65,6 @@ int main() {
             cout << "Enter the number you wish to find the square root of." << "\n";
             cin >> num;
             int square_root = sqrt(num);
-            ans = square_root;
             cout << "The square root of " << num << " equals " << square_root << "." << "\n";
             goto end;
         }
@@ -83,7 +76,6 @@ int main() {
             cout << "Enter the number you wish to find the cube root of." << "\n";
             cin >> num;
             int cube_root = cbrt(num);
-            ans = cube_root;
             cout << "The cube root of " << num << " equals " << cube_root << "." << "\n";
             goto end;
         }
@@ -104,7 +96,6 @@ int main() {
                 cout << "Enter the hypotenuse length." << "\n";
                 cin >> hyp;
                 cout << "The sine of angle theta in this scenario is " << opp / hyp << "." << "\n";
-                ans = opp / hyp;
                 goto end;
             }
             
@@ -118,7 +109,6 @@ int main() {
                 cout << "Enter the hypotenuse length." << "\n";
                 cin >> hyp;
                 cout << "The cosine of angle theta in this scenario is " << adj / hyp << "." << "\n";
-                ans = adj / hyp;
                 goto end;
             }
             
@@ -132,7 +122,6 @@ int main() {
                 cout << "Enter the opposite side length." << "\n";
                 cin >> opp;
                 cout << "The tangent of angle theta in this scenario is " << opp / adj << "." << "\n";
-                ans = opp / adj;
                 goto end;
             }
             
@@ -177,7 +166,6 @@ int main() {
             }
             end_LCM:
             cout << "The least common multiple of " << first_number << " and " << second_number << " is " << lcm << "." << "\n";
-            ans = lcm;
             goto end;
         }
         
@@ -219,7 +207,6 @@ int main() {
             }
             end_GCF:
             cout << "The greatest common factor of " << first_number << " and " << second_number << " is " << gcf << "." << "\n";
-            ans = gcf;
             goto end;
         }
         
@@ -266,7 +253,6 @@ int main() {
                 cout << "Enter the measure of the angle you wish to find the complement of." << "\n";
                 cin >> angle_measure;
                 float comp_angle_measure = 90 - angle_measure;
-                ans = comp_angle_measure;
                 cout << "The complement of " << angle_measure << " is " << comp_angle_measure << "." << "\n";
                 goto end;
             }
@@ -278,7 +264,6 @@ int main() {
                 cout << "Enter the measure of the angle you wish to find the supplement of." << "\n";
                 cin >> angle_measure;
                 float supp_angle_measure = 180 - angle_measure;
-                ans = supp_angle_measure;
                 cout << "The supplement of " << angle_measure << " is " << supp_angle_measure << "." << "\n";
                 goto end;
             }
@@ -293,7 +278,6 @@ int main() {
                 cout << "Enter the first triangle angle measure." << "\n";
                 cin >> angle_measure_2;                
                 float third_angle_measure = 180 - angle_measure_1 - angle_measure_2;
-                ans = third_angle_measure;
                 cout << "The third angle of the triangle is " << third_angle_measure << "." << "\n";
                 goto end;
             }            
@@ -335,7 +319,6 @@ int main() {
             sum += addend;
         }
         cout << "The sum of the numbers you have entered is " << sum << "." << "\n";
-        ans = sum;
         goto end;
     }
     
@@ -350,7 +333,6 @@ int main() {
         cin >> subtrahend;
         int difference = minuend - subtrahend;
         cout << "The difference is " << difference << "." << "\n";
-        ans = difference;
         goto end;
     }
     
@@ -367,7 +349,6 @@ int main() {
             product *= multiple;
         }
         cout << "The product of the " << multiples << " numbers you have entered is " << product << "." << "\n";
-        ans = product;
         goto end;
     }    
     
@@ -382,7 +363,6 @@ int main() {
         cin >> divisor;
         int quotient = dividend / divisor;
         cout << "The quotient is " << quotient << "." << "\n";
-        ans = quotient;
         goto end;
     }
     
@@ -399,7 +379,7 @@ int main() {
     cin >> next_operation;
     if (next_operation == "YES") {
         //back to first four operation choices
-        goto beginning;    
+        goto beginning;
     }
     else if (next_operation == "NO") {
         //exits program
